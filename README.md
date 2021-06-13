@@ -2,9 +2,13 @@
 
 ### **Number 1**
 a.	If a directory made with `AtoZ_` with its front, then the file will be encoded
+
 b.	If its rename like in in a point, then it will be encoded
+
 c.	If the encrypted directory renamed, the directory contains will decoded
+
 d.	mkdir and rename directory will be noted to log
+
 e.	encoding method will be applied in the contains of the directory, and will be done recursively
 
 The problem ask us to do encrypt and decrypt file name and folder using Atbash cipher. To get the file and folder we use loop. There is 3 function that we use in here. `slash_id` (to return index slash), `ext_id`(return the index file extension), and `split_ext_id` (to return the index file extension in the splitted file). 
@@ -92,10 +96,15 @@ Difficulties
 
 ### **Number 2**
 This problem requires us to make more encryption.
+
 a.	If the directory created with a name format `RX_..`, the directory will be encoded with its containments, additionally with ROT13 algorithm
+
 b.	If its renamed with `RX_...`, it will be encoded. With addition using Vignere Cipher with key `SISOP`. It is case sensitive
+
 c.	If we rename encrypted directory, it will decoded
+
 d.	All encoding will be noted to logged
+
 e.	Files in directory will split into 1024 bytes size files. When accessed thru filesystem it only appeared as `Suatu_File.txt`
 
 In `xmp_rename`, it will check if the directory already been rename by adding `RX_` or delete the `RX_` using `strstr`.
@@ -207,10 +216,15 @@ Still unsolvable
 This problem require us to logging all progress from the functions above.
 
 a.	Log system will be made in home directory. It will contain all system call in the file system
+
 b.	There is two type level, `INFO` and `WARNING`
+
 c.	WARNING cited syscall `rmdir` and `unlink`
+
 d.	The rest will cited as`INFO`
+
 e.	Formatted as in the problem
+
 
 To log it, we use`tulislog`and`tulislog2`functions. First we need to find the time info
 ```c
