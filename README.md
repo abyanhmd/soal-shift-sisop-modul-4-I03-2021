@@ -93,6 +93,7 @@ Decrypt and encrypt will be called in `readdir` function. While calling the func
 Difficulties
 -	Encrypt and decrypt could be executed as 1 function, but we it was already done
 -	Logging the mkdir and rename is still in problem
+-	Hard to understand
 
 ### **Number 2**
 This problem requires us to make more encryption.
@@ -205,7 +206,7 @@ The solution is quite similar to number 1, but with additional file split that w
 Difficulties
 -	Logging the `mkdir` and `rename` is still in problem
 -	We have problems in splitting the files
-
+- 	Hard to understand
 
 ### **Number 3**
 
@@ -281,4 +282,7 @@ void tulisLog2(char *nama, const char *from, const char *to)
 }
 ```
 Difficulties:
--mkdir and rename log is still not written
+
+- mkdir and rename log is still not written
+
+- Hard to understand
